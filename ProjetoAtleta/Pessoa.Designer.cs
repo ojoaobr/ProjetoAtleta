@@ -38,6 +38,8 @@
             this.lblInfo = new System.Windows.Forms.Label();
             this.lblIdade = new System.Windows.Forms.Label();
             this.dtNascimento = new System.Windows.Forms.DateTimePicker();
+            this.lblPeso = new System.Windows.Forms.Label();
+            this.txtPeso = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtNome
@@ -49,14 +51,14 @@
             // 
             // txtAltura
             // 
-            this.txtAltura.Location = new System.Drawing.Point(141, 107);
+            this.txtAltura.Location = new System.Drawing.Point(141, 91);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(217, 20);
             this.txtAltura.TabIndex = 1;
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(27, 147);
+            this.btnEnviar.Location = new System.Drawing.Point(26, 170);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(331, 51);
             this.btnEnviar.TabIndex = 2;
@@ -66,11 +68,11 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(27, 217);
+            this.btnCalcular.Location = new System.Drawing.Point(26, 240);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(331, 51);
             this.btnCalcular.TabIndex = 3;
-            this.btnCalcular.Text = "Calcular idade";
+            this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
@@ -86,7 +88,7 @@
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(24, 69);
+            this.lblData.Location = new System.Drawing.Point(24, 63);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(110, 13);
             this.lblData.TabIndex = 5;
@@ -95,7 +97,7 @@
             // lblAltura
             // 
             this.lblAltura.AutoSize = true;
-            this.lblAltura.Location = new System.Drawing.Point(24, 110);
+            this.lblAltura.Location = new System.Drawing.Point(24, 98);
             this.lblAltura.Name = "lblAltura";
             this.lblAltura.Size = new System.Drawing.Size(40, 13);
             this.lblAltura.TabIndex = 6;
@@ -104,7 +106,7 @@
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(172, 280);
+            this.lblInfo.Location = new System.Drawing.Point(171, 305);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(40, 13);
             this.lblInfo.TabIndex = 7;
@@ -114,7 +116,7 @@
             // 
             this.lblIdade.AutoSize = true;
             this.lblIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.lblIdade.Location = new System.Drawing.Point(146, 317);
+            this.lblIdade.Location = new System.Drawing.Point(145, 342);
             this.lblIdade.Name = "lblIdade";
             this.lblIdade.Size = new System.Drawing.Size(92, 29);
             this.lblIdade.TabIndex = 8;
@@ -122,16 +124,34 @@
             // 
             // dtNascimento
             // 
-            this.dtNascimento.Location = new System.Drawing.Point(141, 64);
+            this.dtNascimento.Location = new System.Drawing.Point(141, 56);
             this.dtNascimento.Name = "dtNascimento";
             this.dtNascimento.Size = new System.Drawing.Size(217, 20);
             this.dtNascimento.TabIndex = 9;
+            // 
+            // lblPeso
+            // 
+            this.lblPeso.AutoSize = true;
+            this.lblPeso.Location = new System.Drawing.Point(23, 133);
+            this.lblPeso.Name = "lblPeso";
+            this.lblPeso.Size = new System.Drawing.Size(37, 13);
+            this.lblPeso.TabIndex = 13;
+            this.lblPeso.Text = "Peso: ";
+            // 
+            // txtPeso
+            // 
+            this.txtPeso.Location = new System.Drawing.Point(140, 126);
+            this.txtPeso.Name = "txtPeso";
+            this.txtPeso.Size = new System.Drawing.Size(217, 20);
+            this.txtPeso.TabIndex = 12;
             // 
             // Pessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 375);
+            this.ClientSize = new System.Drawing.Size(380, 390);
+            this.Controls.Add(this.lblPeso);
+            this.Controls.Add(this.txtPeso);
             this.Controls.Add(this.dtNascimento);
             this.Controls.Add(this.lblIdade);
             this.Controls.Add(this.lblInfo);
@@ -162,6 +182,8 @@
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Label lblIdade;
         private System.Windows.Forms.DateTimePicker dtNascimento;
+        private System.Windows.Forms.Label lblPeso;
+        private System.Windows.Forms.TextBox txtPeso;
     }
 }
 

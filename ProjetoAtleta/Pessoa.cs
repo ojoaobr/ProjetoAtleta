@@ -26,7 +26,13 @@ namespace ProjetoAtleta
                 obj.Nome = txtNome.Text;
                 obj.DataNascimento = dtNascimento.Value;
                 obj.Altura = double.Parse(txtAltura.Text);
+                obj.Peso = double.Parse(txtPeso.Text);
                 MessageBox.Show("Dados armazenados com sucesso!");
+
+                txtNome.Text = "";
+                txtNome.Focus();
+                txtAltura.Text = "";
+                txtPeso.Text = "";
             }
             catch(FormatException ex)
             {

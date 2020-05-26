@@ -11,6 +11,8 @@ namespace ProjetoAtleta
         private string nome;
         private DateTime dataNascimento;
         private double altura;
+        private double peso;
+        private double imc;
 
         public string Nome
         {
@@ -50,11 +52,38 @@ namespace ProjetoAtleta
             get { return this.altura; }
         }
 
+        public double Peso
+        {
+            set
+            {
+                if (value >= 1.00)
+                {
+                    this.peso = value;
+                }
+                else
+                {
+                    throw new Exception("O peso mínimo deve ser de 1.00Kg!");
+                }
+            }
+            get { return this.peso; }
+        }
+
+        public double IMC
+        {
+            set
+            {
+                this.imc = peso / (altura * altura);
+            }
+            get { return this.imc; }
+        }
+
         public string ImprimeDados()
         {
             return "\n\nNome: " + this.nome +
                    "\nData de Nascimento: " + this.dataNascimento.ToString("dd/MM/yyyy") +
-                   "\nAltura: " + this.altura.ToString("0.00") + "m";
+                   "\nAltura: " + this.altura.ToString("0.00") + "m" +
+                   "\nPeso: " + this.peso.ToString("00.0") + "Kg" +
+                   "\n\nIMC: " + this.imc.ToString("00.0");
         }
 
         public int CalcularIdade()
