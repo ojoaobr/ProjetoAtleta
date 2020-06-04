@@ -48,7 +48,7 @@ namespace ProjetoAtleta
         {
             MessageBox.Show("Dados obtidos: " + obj.ImprimeDados() +
                             "\n\nIdade: " + obj.CalcularIdade().ToString("00") + " Anos");
-            lblImc.Text = obj.IMC.ToString("00,0");
+            lblImc.Text = obj.IMC.ToString("00.0");
         }
     }
 }

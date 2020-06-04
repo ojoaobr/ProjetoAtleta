@@ -116,11 +116,11 @@
             // 
             this.lblImc.AutoSize = true;
             this.lblImc.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.lblImc.Location = new System.Drawing.Point(145, 342);
+            this.lblImc.Location = new System.Drawing.Point(169, 341);
             this.lblImc.Name = "lblImc";
-            this.lblImc.Size = new System.Drawing.Size(92, 29);
+            this.lblImc.Size = new System.Drawing.Size(62, 29);
             this.lblImc.TabIndex = 8;
-            this.lblImc.Text = "0 Anos";
+            this.lblImc.Text = "00.0";
             // 
             // dtNascimento
             // 
