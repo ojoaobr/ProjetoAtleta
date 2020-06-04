@@ -90,5 +90,6 @@ namespace ProjetoAtleta
         {
             return DateTime.Now.Year - this.dataNascimento.Year;
         }
+
     }
 }

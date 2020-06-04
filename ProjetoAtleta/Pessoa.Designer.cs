@@ -36,7 +36,7 @@
             this.lblData = new System.Windows.Forms.Label();
             this.lblAltura = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
-            this.lblIdade = new System.Windows.Forms.Label();
+            this.lblImc = new System.Windows.Forms.Label();
             this.dtNascimento = new System.Windows.Forms.DateTimePicker();
             this.lblPeso = new System.Windows.Forms.Label();
             this.txtPeso = new System.Windows.Forms.TextBox();
@@ -108,19 +108,19 @@
             this.lblInfo.AutoSize = true;
             this.lblInfo.Location = new System.Drawing.Point(171, 305);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(40, 13);
+            this.lblInfo.Size = new System.Drawing.Size(26, 13);
             this.lblInfo.TabIndex = 7;
-            this.lblInfo.Text = "Idade: ";
+            this.lblInfo.Text = "IMC";
             // 
-            // lblIdade
+            // lblImc
             // 
-            this.lblIdade.AutoSize = true;
-            this.lblIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.lblIdade.Location = new System.Drawing.Point(145, 342);
-            this.lblIdade.Name = "lblIdade";
-            this.lblIdade.Size = new System.Drawing.Size(92, 29);
-            this.lblIdade.TabIndex = 8;
-            this.lblIdade.Text = "0 Anos";
+            this.lblImc.AutoSize = true;
+            this.lblImc.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.lblImc.Location = new System.Drawing.Point(145, 342);
+            this.lblImc.Name = "lblImc";
+            this.lblImc.Size = new System.Drawing.Size(92, 29);
+            this.lblImc.TabIndex = 8;
+            this.lblImc.Text = "0 Anos";
             // 
             // dtNascimento
             // 
@@ -153,7 +153,7 @@
             this.Controls.Add(this.lblPeso);
             this.Controls.Add(this.txtPeso);
             this.Controls.Add(this.dtNascimento);
-            this.Controls.Add(this.lblIdade);
+            this.Controls.Add(this.lblImc);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.lblAltura);
             this.Controls.Add(this.lblData);
@@ -180,7 +180,7 @@
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Label lblAltura;
         private System.Windows.Forms.Label lblInfo;
-        private System.Windows.Forms.Label lblIdade;
+        private System.Windows.Forms.Label lblImc;
         private System.Windows.Forms.DateTimePicker dtNascimento;
         private System.Windows.Forms.Label lblPeso;
         private System.Windows.Forms.TextBox txtPeso;
